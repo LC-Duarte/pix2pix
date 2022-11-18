@@ -8,7 +8,7 @@ checkpoints/
 
 # luarocks build files
 *.src.rock
-#*.zip
+*.zip
 *.tar.gz
 *.t7
 
