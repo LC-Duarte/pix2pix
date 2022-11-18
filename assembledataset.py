@@ -3,7 +3,7 @@
 import logging
 import sys
 #Basic log config
-LOG_LEVEL = logging.DEBUG
+LOG_LEVEL = logging.INFO
 def setupLogger(name, level = LOG_LEVEL):
     formatter = logging.Formatter(fmt='%(asctime)s %(process)s %(filename)s:%(lineno)d %(levelname)s: %(message)s', datefmt='%Y-%m-%d %I:%M:%S')
     handler = logging.StreamHandler()
@@ -37,7 +37,7 @@ TRAIN_ZIP_NAME="Treino.zip"
 FILESTOREMOVE = ["lisa", "family", "maggie", "marge"]
 
 DS_SIZE = 500 #Size of output dataset
-IMG_SIZE = 128
+IMG_SIZE = 256
 def download(url, outpath=None):
     """
     wget.download(url, bar=bar_thermometer)
